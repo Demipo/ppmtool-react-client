@@ -40,6 +40,6 @@
     ]   
   },
   "proxy": "https://projects-management-tool.herokuapp.com",
-  "homepage":"/"
+  "homepage":"/src/components/Layout/Landing.js"
 
 }

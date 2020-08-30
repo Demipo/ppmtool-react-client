@@ -2,6 +2,10 @@
   "name": "ppmtool-react-client",
   "version": "0.1.0",
   "private": true,
+  "engines": { 
+    "npm": "6.13.4", 
+    "node": "12.16.1" 
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -19,7 +23,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "heroku-postbuild":"npm install",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,7 +44,5 @@
       "last 1 safari version"
     ]   
   },
-  "proxy": "https://projects-management-tool.herokuapp.com",
-  "homepage":"/src/components/Layout/Landing.js"
-
+  "proxy": "https://projects-management-tool.herokuapp.com"
 }
